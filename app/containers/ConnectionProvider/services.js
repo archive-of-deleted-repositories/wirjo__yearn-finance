@@ -17,9 +17,8 @@ export function initOnboard(subscriptions, darkMode) {
       wallets: [
         { walletName: 'metamask' },
         {
-          walletName: 'lattice',
-          appName: 'Yearn Finance',
-          rpcUrl,
+          walletName: 'walletConnect',
+          infuraKey: '***REMOVED***',
         },
         {
           walletName: 'trezor',
@@ -33,6 +32,11 @@ export function initOnboard(subscriptions, darkMode) {
         },
         { walletName: 'coinbase' },
         { walletName: 'status' },
+        {
+          walletName: 'lattice',
+          appName: 'Yearn Finance',
+          rpcUrl,
+        },
         { walletName: 'walletLink', rpcUrl },
         {
           walletName: 'portis',
@@ -42,10 +46,6 @@ export function initOnboard(subscriptions, darkMode) {
         { walletName: 'torus' },
         { walletName: 'authereum', disableNotifications: true },
         { walletName: 'trust', rpcUrl },
-        {
-          walletName: 'walletConnect',
-          infuraKey: '***REMOVED***',
-        },
         { walletName: 'opera' },
         { walletName: 'operaTouch' },
         { walletName: 'imToken', rpcUrl },
